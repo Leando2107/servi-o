@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ficha de Emergência</title>
+        <style>
+            /* Estilo do corpo */
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f9f9f9;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                min-height: 100vh;
+                padding-top: 20px;
+                position: relative;
+            }
+    
+            /* Marca d'água */
+            .img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 60mm; /* Define o tamanho da imagem para 60mm */
+                height: auto; /* Ajusta automaticamente a altura proporcional */
+                background-image: url("img/img1.jpg"); /* Substitua pelo caminho da sua imagem */
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: contain;
+                opacity: 0.1; /* Reduz a opacidade para criar efeito de marca d'água */
+                z-index: 1; /* Coloca a marca d'água atrás do conteúdo */
+                pointer-events: none; /* Evita interação com a imagem */
+            }
+    
+            /* Container principal */
+            .container {
+                width: 100%;
+                max-width: 600px;
+                background: transparent; /* Fundo transparente */
+                padding: 15px;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                position: relative;
+                z-index: 2; /* Coloca o formulário acima da marca d'água */
+            }
+    
+            /* Cabeçalho com imagem e título */
+            .header {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                margin-bottom: 20px;
+            }
+    
+            .header img {
+                width: 50px; /* Largura da imagem no cabeçalho */
+                height: 50px;
+                margin-right: 10px; /* Espaço entre a imagem e o texto */
+            }
+    
+            .header h1 {
+                font-size: 18px;
+                color: #0056b3;
+                margin: 0;
+            }
+    
+            /* Campos do formulário */
+            .container label {
+                display: block;
+                margin: 3px 0 3px;
+                font-weight: bold;
+                font-size: 11px;
+            }
+    
+            .container input,
+            .container textarea,
+            .container select,
+            .container button {
+                width: 100%;
+                padding: 5px;
+                margin-bottom: 6px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                font-size: 12px;
+                box-sizing: border-box;
+            }
+    
+            .container button {
+                background-color: #0056b3;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+    
+            .container button:hover {
+                background-color: #003f7f;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Marca d'água -->
+        <div class="img"></div>
+    
+        <!-- Conteúdo do formulário -->
+        <div class="container">
+            <!-- Cabeçalho -->
+            <div class="header">
+                <img src="img/img 1.jpg" alt="Logo"> <!-- Substitua pelo caminho da sua imagem -->
+                <h1>Ficha de Emergência</h1>
+            </div>
+    
+            <!-- Seções do formulário -->
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+    
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+    
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email">
+    
+            <label for="descricao">Descrição da Emergência:</label>
+            <textarea id="descricao" name="descricao" rows="4"></textarea>
+    
+            <label for="prioridade">Prioridade:</label>
+            <select id="prioridade" name="prioridade">
+                <option value="alta">Alta</option>
+                <option value="media">Média</option>
+                <option value="baixa">Baixa</option>
+            </select>
+    
+            <button type="submit">Enviar</button>
+        </div>
+    </body>
+    </html>
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
